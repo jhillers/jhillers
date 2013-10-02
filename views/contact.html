@@ -1,0 +1,10 @@
+<div class="contact-container hero-unit">
+    <h2>{{title}}</h2>
+    <ul>
+        <li data-ng-repeat="method in contactMethods" class="contactItem">
+            <a target="_blank" href="{{ method.link }}"><img data-ng-src="{{ method.imageURL }}" class="contact-image"></a>
+        </li>
+    </ul>
+</div>
+
+

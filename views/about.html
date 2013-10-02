@@ -1,0 +1,23 @@
+<div class="aboutContainer hero-unit">
+    <h2>{{title}}</h2>
+    <div data-ng-repeat="item in aboutItems" class="media">
+        <a target="_blank" class="pull-left" href="{{ item.link }}">
+            <img data-ng-src="{{ item.imageURL }}" class="media-object">
+        </a>
+        <div class="media-body">
+            <a target="_blank" href="{{ item.link }}"><h4 class="media-heading">{{item.title}}</h4></a>
+            {{ item.description }}
+            <div data-ng-repeat="sub in item.subItems" class="media">
+                <a target="_blank" href="{{ sub.link }}" class="pull-left">
+                    <img data-ng-src="{{ sub.imageURL }}" class="media-object sub-media-object">
+                </a>
+                <a target="_blank" href="{{ sub.link }}">
+                    <h5 class="media-heading">{{sub.title}}</h5>
+                </a>
+                {{ sub.description }}
+            </div>
+        </div>
+    </div>
+</div>
+
+

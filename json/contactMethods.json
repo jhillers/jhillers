@@ -1,0 +1,16 @@
+{
+    "contactMethods": [
+        {
+            "imageURL": "images/Twitter.png",
+            "link": "http://twitter.com/jhillers"
+        },
+        {
+            "imageURL": "images/LinkedIn.png",
+            "link": "http://www.linkedin.com/profile/view?id=51290798"
+        },
+        {
+            "imageURL": "images/Mail.png",
+            "link": "mailto:josehillers@gmail.com?Subject=From%20Contact%20Page"
+        }
+    ]
+}

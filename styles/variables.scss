@@ -1,0 +1,17 @@
+@mixin gradient($property, $expression) {
+  #{$property}: -moz-gradient(#{$expression});
+  #{$property}: -o-gradient(#{$expression});
+  #{$property}: -webkit-gradient(#{$expression});
+  #{$property}: gradient(#{$expression});
+}
+
+$buttonIdle:#e9e9e9;
+$buttonSelected:#3299BB;
+$hightlight:#FF9900;
+$titleColour:darken($hightlight,7%);
+$backgroundColour:#424242;
+$lightBackgroundColour:#BCBCBC;
+$iconBackground:url("../images/glyphicons-halflings.png");
+$iconBackgroundWhite:url("../images/glyphicons-halflings-white.png");
+$imageDimensions: 64px;
+$subImageDimensions: 32px;

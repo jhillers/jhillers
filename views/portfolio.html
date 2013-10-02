@@ -1,0 +1,27 @@
+<div class="hero-unit" id="portfolio-container">
+    <!--Side  menu of items for direct selection-->
+    <ul class="portfolio-side-menu portfolio">
+        <!--Input for filtering items by type-->
+        <input data-ng-model="filterText.tags" typeahead="tag for tag in tagList | filter:$viewValue"
+               typeahead-on-select="onSelect()" placeholder="Filter by type, e.g flash,html5">
+        <li data-ng-repeat="item in portfolioItems | orderBy:'name' | filter:filterText" class="portfolioSideMenuItem">
+            <button class="btn btn-mini btn-block" data-ng-class="{'btn-info': !item.active, 'btn-success': item.active}"
+                    ng-disabled="item.active"
+                    ng-click="item.active = true">{{item.name}}
+                <i id="portfolio-chevron" class="icon-chevron-right icon-white"></i>
+            </button>
+        </li>
+    </ul>
+    <!--Video carousel-->
+    <carousel interval="slideInterval" class="portfolio portfolio-carousel">
+        <slide data-ng-repeat="item in portfolioItems | orderBy:'name' | filter:filterText" active="item.active">
+            <video controls width="520" height="420"
+                    data-ng-src="{{ item.videoURL }}">
+            </video>
+            <div class="carousel-caption">
+                <h4>{{item.name}}</h4>
+                <p>{{item.description}}</p>
+            </div>
+        </slide>
+    </carousel>
+</div>

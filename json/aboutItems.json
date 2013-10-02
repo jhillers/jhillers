@@ -1,0 +1,43 @@
+{
+    "aboutItems": [
+        {
+            "imageURL": "images/Yeoman.jpeg",
+            "title": "Yeoman",
+            "link": "http://yeoman.io/",
+            "description": " I really love this tool, it helped me scaffold an AngularJS app very quickly, and with bower I can keep my dependencies up to date easily. Grunt is great for compiling my compass css files, testing and deploying my app."
+        },
+        {
+            "imageURL": "images/Angular.jpeg",
+            "title": "AngularJS",
+            "link": "http://angularjs.org/",
+            "description": "The entire site was built on angular which really helps separating business and presentation logic. Content is loaded via services that pull local json files.",
+            "subItems": [
+                {
+                    "title": "UI Bootstrap",
+                    "imageURL": "images/Angular-ui.jpeg",
+                    "link":"http://angular-ui.github.io/bootstrap/",
+                    "description":"The top navigation and the portfolio carousel are directives that replicate bootstrap counterpart's functionality."
+                }
+            ]
+        },
+        {
+            "imageURL": "images/Requirejs.png",
+            "title": "Require-js",
+            "link": "http://requirejs.org/",
+            "description": "Always my tool of choice for AMD loading and minimising script tags on the main HTML page."
+        },
+        {
+            "imageURL": "images/Bootstrap.png",
+            "title": "Bootstrap",
+            "link": "http://getbootstrap.com/",
+            "description": "Great css framework that  took care of all aesthetic aspects of the site. It also gave me the change to use Compass for easily reusable styles."
+        },
+        {
+            "imageURL": "images/Processing.jpeg",
+            "title": "Processing",
+            "link": "http://processing.org/",
+            "description": "I created a simple sketch using processing and loaded the resulting pde externally via ProcessingJS."
+        }
+
+    ]
+}
