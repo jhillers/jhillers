@@ -15,9 +15,9 @@
     <!--Video carousel-->
     <carousel interval="slideInterval" class="portfolio portfolio-carousel">
         <slide data-ng-repeat="item in portfolioItems | orderBy:'name' | filter:filterText" active="item.active">
-            <video controls width="520" height="420"
-                    data-ng-src="{{ item.videoURL }}">
-            </video>
+            <iframe  width="520" height="442" frameborder="0" allowfullscreen
+                    src="{{item.videoURL}}">
+            </iframe>
             <div class="carousel-caption">
                 <h4>{{item.name}}</h4>
                 <p>{{item.description}}</p>

@@ -3,59 +3,56 @@
         {
             "name": "Bingo Garden",
             "description": "Our first bingo game that we used to develop our flash bingo engine. I Developed a chat engine, using the Text Layout framework to inline emoticons with text. I also made several   pop-up screens such as the shop and ...",
-            "photoURL": "http://placekitten.com/500/400",
-            "videoURL": "video/BingoGarden.mp4",
+            "videoURL": "http://www.youtube.com/embed/MFzr-W1IzS4",
             "tags": "flash bingo"
         },
         {
             "name": "X Factor Bingo Stars",
             "description": "Flash Bingo game with the XFactor theme created for FremantleMedia. Working from an existing bingo engine created in-house,I completed all frontend work for this project. I created the notes animating across the staves with Caurina Transitions and adding bespoke curves as an array of points.",
-            "photoURL": "http://placekitten.com/500/400",
-            "videoURL": "video/XFactorBingo.mp4",
+            "videoURL": "http://www.youtube.com/embed/MFzr-W1IzS4",
             "tags": "flash bingo"
         },
         {
             "name": "BGT Bingo Stars",
             "description": "Flash bingo game with Britain's Got talent theme created for FreemantleMedia. Working from an existing bingo engine created in-house,I completed all frontend work for this project. This game features extensive use of programmatic animation using Caurina Transitions. Also frame-based animations loaded dynamically and replaced listening to frameScript events.",
-            "photoURL": "http://placekitten.com/500/400",
-            "videoURL": "video/BGTBingo.mp4",
+            "videoURL": "http://www.youtube.com/embed/sfHgQlJc6Z0",
             "tags": "flash bingo"
         },
-
+        {
+            "name": "Mirror Bingo",
+            "description": "Flash bingo game with Britain's Got talent theme created for FreemantleMedia. Working from an existing bingo engine created in-house,I completed all frontend work for this project. This game features extensive use of programmatic animation using Caurina Transitions. Also frame-based animations loaded dynamically and replaced listening to frameScript events.",
+            "videoURL": "http://www.youtube.com/embed/bQqB8ZH2BoU",
+            "tags": "flash bingo"
+        },
         {
             "name": "Player's Heaven",
             "description": "I created a slot machine engine for our in-house framework using the state-machine design pattern. Different slot machines and their respective bonus games are loaded using the factory pattern. I also completed a generic free spins mode, as well as the entire front-end work for two slot machines and their bonus games ( Total Wipeout and Rainbow Riches )",
-            "photoURL": "http://placekitten.com/410/403",
-            "videoURL": "video/PlayerHeavenSlots.mp4",
+            "videoURL": "http://www.youtube.com/embed/VRZaWu2onO8",
             "tags": "flash slots"
         },
         {
             "name": "Slots Of Fun",
             "description": "Working from a very basic HMTL5 slot engine developed in-house, I created all frontend work for this project. I introduced the use of requireJS for script loading and concatenating all files for the build release using r.js tool. Also a way of loading bonus games as external modules without the need for the slot machine to hold references to them, thus keeping our code generic to be used in future games. It also features a fully responsive UI",
-            "photoURL": "http://placekitten.com/410/403",
-            "videoURL": "video/SlotsOfFun.mp4",
+            "videoURL": "http://www.youtube.com/embed/CEjnUKwGnqQ",
             "tags": "html5 slots"
         },
 
         {
             "name": "Sun Football Legends",
             "description": "A football theme social game created for The Sun newspaper. I completed a  framework for loading mini-games , which represent key moments in a match. The idea was that these could be easily replaced for others, as well as extended into more complex games if the client required it. I also completed the newspaper view with chapter based story lines that are driven by decisions made by the user and driven by data from the server.",
-            "photoURL": "http://placekitten.com/510/428",
-            "videoURL": "video/SunFootballLegends.mp4",
+            "videoURL": "http://www.youtube.com/embed/0xMG0DROhXY",
             "tags": "flash football sports"
         },
         {
             "name": "Social sudoku",
             "description": "An HTML5 social game made for a local newspaper. Two users play against each other in turns completing a sudoku puzzle for each position in the map until destination and origin are joint. I completed the entire front-end work for this game. I map was made using KineticJS for canvas animation/drawing since it needed scaling up and down easily. All other animations are sprite sheets manipulated with jQuery.",
-            "photoURL": "",
-            "videoURL": "video/SocialSudoku.mp4",
+            "videoURL": "http://www.youtube.com/embed/yrDzciSa1Bg",
             "tags": "html5 sudoku"
         },
         {
             "name": "Purple Ronnie",
             "description": "The first game I made for enteraction, makes use of bone tool to animate Ronnie while being able to customise it via the avatar editor . It sends poems with your avatar via facebook requests and all configurations of the avatar are driven by server data.    ",
-            "photoURL": "http://placekitten.com/420/430",
-            "videoURL": "video/PurpleRonnie.mp4",
+            "videoURL": "http://www.youtube.com/embed/JJ0HkzBCC3c",
             "tags": "flash"
         }
 
