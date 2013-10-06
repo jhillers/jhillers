@@ -1,12 +1,6 @@
 {
     "portfolioElements": [
         {
-            "name": "Bingo Garden",
-            "description": "Our first bingo game that we used to develop our flash bingo engine. I Developed a chat engine, using the Text Layout framework to inline emoticons with text. I also made several   pop-up screens such as the shop and ...",
-            "videoURL": "http://www.youtube.com/embed/MFzr-W1IzS4",
-            "tags": "flash bingo"
-        },
-        {
             "name": "X Factor Bingo Stars",
             "description": "Flash Bingo game with the XFactor theme created for FremantleMedia. Working from an existing bingo engine created in-house,I completed all frontend work for this project. I created the notes animating across the staves with Caurina Transitions and adding bespoke curves as an array of points.",
             "videoURL": "http://www.youtube.com/embed/MFzr-W1IzS4",
