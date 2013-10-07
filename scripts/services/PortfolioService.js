@@ -18,7 +18,7 @@ define([
             var deferred = $q.defer();
             factory.getItems = deferred.promise;
 
-            $http.get('../../json/portfolioElements.json').success(function (data)
+            $http.get('json/portfolioElements.json').success(function (data)
             {
                 deferred.resolve(data);
             });
