@@ -17,11 +17,12 @@ define([
             return {
 
                 restrict: "A",
-                template: '<canvas data-processing-sources="{{sketch}}">' + '</canvas>',
+                template: '<canvas id="sketch" data-processing-sources="{{sketch}}" width="540">' + '</canvas>',
                 link: function (scope, element, attrs, controller)
                 {
                     scope.$watch(scope.sketch,function(){
                         Processing.reload();
+                       // Processing.getInstanceById('sketch').setSize()
                     });
                 }
             };

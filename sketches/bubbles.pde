@@ -9,7 +9,7 @@ Timer timer;
 
 void setup()
 {
-  size (940, 150);
+  size (940, 149);
   colorMode(HSB, 360, 100, 100);
   noStroke();
   frameRate(22);
@@ -36,6 +36,9 @@ void draw()
       applyRedToCircle(i);
     }
   }
+}
+int getElementWidth(){
+  return document.getElementsByClassName("header")[0].offsetWidth;
 }
 void applyRedToCircle(int index)
 {
@@ -83,7 +86,7 @@ class Circle {
       delta = transparent ? random(0.1, 1) : (_alpha >= 100) ? random(-1, -0.1): delta;
     if (transparent)
     {
-      _x = random(0, width);
+      _x = random(0, getElementWidth());
       _y = random(0, height);
       setSpeed();
       setRadius();

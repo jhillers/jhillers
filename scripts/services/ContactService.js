@@ -14,7 +14,7 @@ define([
             var deferred = $q.defer();
             factory.getItems = deferred.promise;
 
-            $http.get('json/contactMethods.json').success(function (data)
+            $http.get('../../json/contactMethods.json').success(function (data)
             {
                 deferred.resolve(data);
             });
