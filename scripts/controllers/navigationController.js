@@ -7,23 +7,23 @@
  */
 define([
     'angular', '../../components/bootstrap-ui/src/tabs/tabs'
-], function (angular)
-{
+], function (angular){
+
     'use strict';
 
     return angular.module('navigation', ['ui.bootstrap.tabs'])
-        .controller('navigationController', function ($scope)
+        .controller('navigationController', function ($scope, $location)
         {
             $scope.tabs = [
-                {title: 'home', link: '#/home',icon:'icon-home'},
-                {title: 'portfolio', link: '#/portfolio',icon:'icon-briefcase'},
-                {title: 'contact', link: '#/contact',icon:'icon-envelope'},
-                {title: 'about', link: '#/about',icon:'icon-info-sign'}
+                {title: 'home', link: '/home', icon: 'icon-home'},
+                {title: 'portfolio', link: '/portfolio', icon: 'icon-briefcase'},
+                {title: 'contact', link: '/contact', icon: 'icon-envelope'},
+                {title: 'about', link: '/about', icon: 'icon-info-sign'}
             ];
             $scope.navType = 'pills';
             $scope.onTabSelected = function (link)
             {
-                window.location = link;
+                $location.path(link)
             };
         });
 });

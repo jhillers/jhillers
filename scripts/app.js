@@ -1,5 +1,6 @@
 define([
     'angular',
+    'directives/headerDirective',
     'controllers/homeController',
     'controllers/navigationController',
     'controllers/portfolioController',
@@ -7,9 +8,9 @@ define([
     'controllers/aboutController',
     'controllers/headerController']
     , function (angular)
-{
-    'use strict';
+    {
+        'use strict';
 
-    return angular.module('portfolioApp', ['home', 'navigation', 'portfolio',
-        'contact',"about",'header']);
-});
+        return angular.module('portfolioApp', ['home', 'navigation', 'portfolio',
+            'contact', "about", 'header']);
+    });

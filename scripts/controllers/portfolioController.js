@@ -6,7 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 define([
-    'angular', 'services/PortfolioService', '../../components/bootstrap-ui/src/transition/transition',
+    'angular', 'services/PortfolioService',
+    '../../components/bootstrap-ui/src/transition/transition',
     '../../components/bootstrap-ui/src/carousel/carousel',
     '../../components/bootstrap-ui/src/position/position',
     '../../components/bootstrap-ui/src/typeahead/typeahead'
@@ -17,7 +18,7 @@ define([
         'use strict';
 
         return angular.module('portfolio', ['ui.bootstrap.carousel', 'ui.bootstrap.typeahead', 'services'])
-            .controller('portfolioController', function ($scope, portfolioFactory,$filter)
+            .controller('portfolioController', function ($scope, portfolioFactory, $filter)
             {
                 $scope.slideInterval = -1;
 
@@ -28,11 +29,21 @@ define([
                     $scope.tagList = getTagList(portfolioItems);
                 });
 
-                $scope.onSelect = function (item)
+                $scope.onSelect = function ()
                 {
-
-                    console.log($filter('filter')($scope.filterText.tags,$scope.tagList));
-                    $scope.portfolioItems[0].active = true;
+                    var portfolioItems = $scope.portfolioItems.sort(function(a,b){
+                        return a.name > b.name
+                    });
+                    var length = portfolioItems.length;
+                    for (var i = 0; i < length; i++)
+                    {
+                        var item = portfolioItems[i];
+                        if (item.tags.indexOf($scope.filterText.tags) >= 0)
+                        {
+                            item.active = true;
+                            break;
+                        }
+                    }
                 };
 
                 function getTagList(portfolioItems)

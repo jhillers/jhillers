@@ -1,5 +1,6 @@
 require([
     //'jquery',
+    'processing',
     'angular',
     'app',
     'routes/routes',
@@ -7,11 +8,11 @@ require([
     /*'angular-resource',
      'angular-cookies',
      'angular-sanitize',*/
-], function (angular, app)
+], function (processing,angular, app)
 {
     'use strict';
 
     var html = document.getElementsByTagName('html')[0];
-    angular.bootstrap(html, [app.name]);
     html.className += ' ng-app';
+    angular.bootstrap(html, [app.name]);
 });

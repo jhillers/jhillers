@@ -6,10 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 define([
-    'angular', 'directives/headerDirective'
+    'angular'
 ],
-    function (angular)
-    {
+    function (angular) {
 
         'use strict';
 
