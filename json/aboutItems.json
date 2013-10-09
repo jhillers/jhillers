@@ -30,7 +30,7 @@
             "imageURL": "images/Bootstrap.png",
             "title": "Bootstrap",
             "link": "http://getbootstrap.com/",
-            "description": "Great css framework that  took care of all aesthetic aspects of the site. It also gave me the change to use Compass for easily reusable styles."
+            "description": "Great css framework that  took care of all aesthetic aspects of the site. It also gave me the chance to use Sass for easily reusable styles."
         },
         {
             "imageURL": "images/Processing.jpeg",
